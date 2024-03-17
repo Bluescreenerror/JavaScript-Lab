@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Maker</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <h2>Build Your Hamburger</h2>
+    <form id="hamburgerForm">
+        <label for="bun">Choose a bun:</label><br>
+        <select id="bun" name="bun">
+            <option value="sesame">Sesame Seed Bun</option>
+            <option value="wheat">Whole Wheat Bun</option>
+        </select><br><br>
+
+        <label>Choose vegetable garnishes:</label><br>
+        <input type="checkbox" id="lettuce" name="vegetable" value="lettuce">
+        <label for="lettuce">Lettuce</label><br>
+        <input type="checkbox" id="tomato" name="vegetable" value="tomato">
+        <label for="tomato">Tomato</label><br>
+        <input type="checkbox" id="onion" name="vegetable" value="onion">
+        <label for="onion">Onion</label><br>
+        <br>
+
+        <label>Choose cheeses:</label><br>
+        <input type="checkbox" id="cheddar" name="cheese" value="cheddar">
+        <label for="cheddar">Cheddar</label><br>
+        <input type="checkbox" id="swiss" name="cheese" value="swiss">
+        <label for="swiss">Swiss</label><br>
+        <br>
+
+        <label>Choose sauces:</label><br>
+        <input type="checkbox" id="ketchup" name="sauce" value="ketchup">
+        <label for="ketchup">Ketchup</label><br>
+        <input type="checkbox" id="mustard" name="sauce" value="mustard">
+        <label for="mustard">Mustard</label><br>
+        <br>
+
+        <label for="patty">Choose patty:</label><br>
+        <select id="patty" name="patty">
+            <option value="beef">Beef</option>
+            <option value="chicken">Chicken</option>
+            <option value="vegetarian">Vegetarian</option>
+        </select><br><br>
+
+        <label for="pattyCount">Choose patty count:</label><br>
+        <input type="radio" id="single" name="pattyCount" value="1">
+        <label for="single">Single</label><br>
+        <input type="radio" id="double" name="pattyCount" value="2">
+        <label for="double">Double</label><br>
+        <input type="radio" id="triple" name="pattyCount" value="3">
+        <label for="triple">Triple</label><br><br>
+
+        <label>Choose extras:</label><br>
+        <input type="checkbox" id="pickles" name="extra" value="pickles">
+        <label for="pickles">Pickles</label><br>
+        <input type="checkbox" id="jalapenos" name="extra" value="jalapenos">
+        <label for="jalapenos">Jalapenos</label><br>
+        <br>
+
+        <button id="buildButton" class="button" type="button">Build Hamburger</button>
+    </form>
+
+    <p id="hamburgerDescription"></p>
+
+</body>
+</html>
